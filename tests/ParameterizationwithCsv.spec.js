@@ -3,7 +3,7 @@ import {parse} from 'csv-parse/sync';
 import fs from 'fs';
 import path from 'path';
 
-const credrecords = parse(fs.readFileSync(path.join(__dirname, 'loginDetails.csv')), {
+const credrecords = parse(fs.readFileSync(path.join(__dirname, 'loginDetail.csv')), {
     columns: true, 
     skip_empty_lines: true
 });

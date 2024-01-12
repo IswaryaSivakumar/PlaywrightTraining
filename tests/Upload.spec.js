@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');     
 
-test.skip('Method 1', async({page})=>
+test('Method 1', async({page})=>
 {
     await page.goto("http://autopract.com/selenium/upload1/");
     //await page.locator('//input[@type="file"]').setInputFiles('tests/test1.txt');    //single input file - 1st Method
@@ -9,7 +9,7 @@ test.skip('Method 1', async({page})=>
 
 }
 )
-test.only('Method 2', async({page})=>
+test('Method 2', async({page})=>
 {
         await page.goto("http://autopract.com/selenium/upload2/");
         const [fileChooser] = await Promise.all([
